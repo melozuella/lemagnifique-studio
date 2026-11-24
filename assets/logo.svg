@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Concept 02: Perspective Frame L-Lapse (Brutalist 3D Studio Gate) -->
+  <g fill="#FFFFFF">
+    <!-- Heavy monumental L cinema frame -->
+    <path d="M 28,28 L 72,28 L 72,168 L 212,168 L 212,212 L 28,212 Z"/>
+    <!-- 3 ascending time-lapse perspective frames inside the L gate -->
+    <polygon points="94,146 94,106 124,88 124,146"/>
+    <polygon points="138,146 138,76 168,58 168,146"/>
+    <polygon points="182,146 182,46 212,28 212,146"/>
+  </g>
+</svg>

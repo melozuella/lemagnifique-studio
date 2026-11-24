@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0A09">
+  <title>Le Magnifique Studio — Magnifique Lapse · 3D Architectural Timelapses</title>
+  <meta name="description" content="Le Magnifique Studio builds real-scale 3D architectural timelapse films in Blender for Magnifique Lapse (@studiolemagnifique). Five completed monument chronologies, zero AI-generated video.">
+  <meta property="og:title" content="Le Magnifique Studio — Magnifique Lapse">
+  <meta property="og:description" content="Real-scale 3D monument timelapses modeled in Blender. No AI imagery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lemagnifique.studio/">
+  <meta property="og:image" content="assets/media/hero-poster.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Full-Bleed Editorial Hairline Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand-link" href="#top" aria-label="Le Magnifique Studio home">
+        <svg class="brand-mark" viewBox="0 0 240 240" aria-hidden="true">
+          <path d="M 28,28 L 72,28 L 72,168 L 212,168 L 212,212 L 28,212 Z" fill="currentColor"/>
+          <polygon class="bar bar-1" points="94,146 94,106 124,88 124,146" fill="var(--accent)" fill-opacity="0.32"/>
+          <polygon class="bar bar-2" points="138,146 138,76 168,58 168,146" fill="var(--accent)" fill-opacity="0.62"/>
+          <polygon class="bar bar-3" points="182,146 182,46 212,28 212,146" fill="var(--accent)"/>
+        </svg>
+        <span class="brand-wordmark">LE MAGNIFIQUE <span>STUDIO</span></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#films">Films</a></li>
+          <li><a href="#downloads">.blend Files</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta" href="https://www.youtube.com/@studiolemagnifique" target="_blank" rel="noopener noreferrer">
+          Watch on YouTube
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu-drawer">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <line x1="2" y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="2" y1="14" x2="18" y2="14" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Height Navigation Drawer -->
+  <div class="menu-drawer" id="menu-drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawer-close" type="button" aria-label="Close menu">&times;</button>
+    <ul class="drawer-nav">
+      <li><a href="#films">Films <span class="tabular" style="font-size:14px; color:var(--accent);">05</span></a></li>
+      <li><a href="#downloads">.blend Files <span class="tabular" style="font-size:14px; color:var(--accent);">05</span></a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="drawer-foot">
+      <div style="font-size:12px; letter-spacing:0.18em; color:var(--muted);">@studiolemagnifique · lemagnifique.studio</div>
+      <a class="btn btn-primary" href="https://www.youtube.com/@studiolemagnifique" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Section 1: Full-Bleed Cinema Hero -->
+    <section class="hero" id="top" data-enter>
+      <div class="hero-media">
+        <video
+          class="hero-video"
+          id="hero-video"
+          src="assets/media/hero-reel.mp4"
+          poster="assets/media/hero-poster.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+        ></video>
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="wrap hero-content">
+        <div>
+          <div class="hero-mark-lockup enter-1">
+            <svg class="hero-mark-svg" viewBox="0 0 240 240" aria-hidden="true">
+              <path d="M 28,28 L 72,28 L 72,168 L 212,168 L 212,212 L 28,212 Z" fill="var(--ink)"/>
+              <polygon class="bar bar-1" points="94,146 94,106 124,88 124,146" fill="var(--accent)" fill-opacity="0.30"/>
+              <polygon class="bar bar-2" points="138,146 138,76 168,58 168,146" fill="var(--accent)" fill-opacity="0.62"/>
+              <polygon class="bar bar-3" points="182,146 182,46 212,28 212,146" fill="var(--accent)"/>
+            </svg>
+            <span class="hero-studio-label">lemagnifique.studio</span>
+          </div>
+
+          <h1 class="enter-1">Centuries of architecture, rebuilt in real 3D.</h1>
+
+          <p class="hero-lead enter-2">
+            Magnifique Lapse is an independent 3D film studio producing chronological monument timelapses in Blender — five completed films spanning 4,600 years, with zero AI-generated video.
+          </p>
+
+          <div class="hero-actions enter-3">
+            <a class="btn btn-primary" href="https://youtu.be/4CSVo5w839o" target="_blank" rel="noopener noreferrer">
+              Watch First Film
+            </a>
+            <a class="btn btn-ghost" href="#films">
+              Browse the Films
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-aside enter-3">
+          <div class="reel-hud" aria-live="polite">
+            <div class="reel-hud-top tabular">
+              <span class="reel-tc" id="reel-timecode">00:00:00</span>
+              <span class="reel-chapter" id="reel-chapter">01 / 05 · THE COLOSSEUM · AD 70–2026</span>
+            </div>
+            <div class="reel-progress" aria-hidden="true">
+              <div class="reel-progress-fill" id="reel-progress-fill"></div>
+            </div>
+            <div class="reel-pips" role="group" aria-label="Jump to monument in intro film">
+              <button class="reel-pip is-active" type="button" data-seek="0" aria-label="Colosseum">01</button>
+              <button class="reel-pip" type="button" data-seek="2.2" aria-label="Pyramids of Giza">02</button>
+              <button class="reel-pip" type="button" data-seek="4.4" aria-label="Notre-Dame de Paris">03</button>
+              <button class="reel-pip" type="button" data-seek="6.6" aria-label="Great Wall of China">04</button>
+              <button class="reel-pip" type="button" data-seek="8.8" aria-label="Statue of Liberty">05</button>
+            </div>
+          </div>
+
+          <button class="reel-toggle" id="reel-toggle" type="button" aria-pressed="false" aria-label="Pause or play background showreel">
+            <span id="reel-toggle-label">Pause Reel</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Film Archive (5 Completed Films) -->
+    <section class="section" id="films" aria-labelledby="films-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="films-heading">Monument Archive</h2>
+          <p class="section-note">Hover any film to preview the 3D timelapse sequence, or open a screening sheet for full chronology and production notes.</p>
+        </div>
+
+        <div class="film-grid">
+          <!-- Featured Lead: The Colosseum -->
+          <button class="film-item is-featured" type="button" data-film="colosseum" aria-label="Preview The Colosseum, AD 70 to 2026, 3 minutes 50 seconds">
+            <div class="film-frame">
+              <img class="film-poster" src="assets/media/colosseum-poster.jpg" alt="3D architectural render of the Roman Colosseum in golden-hour light" width="1280" height="720" loading="eager">
+              <video class="film-preview" data-src="assets/media/colosseum-preview.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <div class="film-scrim" aria-hidden="true"></div>
+              <span class="film-badge tabular">03:50 · 16 SCENES</span>
+            </div>
+            <div class="film-meta">
+              <span class="film-title">The Colosseum</span>
+              <span class="film-span tabular">AD 70 → 2026</span>
+            </div>
+          </button>
+
+          <!-- Giza Pyramids -->
+          <button class="film-item" type="button" data-film="giza" aria-label="Preview The Pyramids of Giza, 2600 BCE to 2026, 5 minutes 52 seconds">
+            <div class="film-frame">
+              <img class="film-poster" src="assets/media/giza-poster.jpg" alt="3D architectural render of the Pyramids of Giza plateau" width="1280" height="720" loading="lazy">
+              <video class="film-preview" data-src="assets/media/giza-preview.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <div class="film-scrim" aria-hidden="true"></div>
+              <span class="film-badge tabular">05:52</span>
+            </div>
+            <div class="film-meta">
+              <span class="film-title">The Pyramids of Giza</span>
+              <span class="film-span tabular">2600 BCE → 2026</span>
+            </div>
+          </button>
+
+          <!-- Great Wall of China -->
+          <button class="film-item" type="button" data-film="great-wall" aria-label="Preview The Great Wall of China, 770 BCE to 2026, 3 minutes 23 seconds">
+            <div class="film-frame">
+              <img class="film-poster" src="assets/media/great-wall-poster.jpg" alt="3D render of the Great Wall of China along mountain ridges" width="1280" height="720" loading="lazy">
+              <video class="film-preview" data-src="assets/media/great-wall-preview.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <div class="film-scrim" aria-hidden="true"></div>
+              <span class="film-badge tabular">03:23</span>
+            </div>
+            <div class="film-meta">
+              <span class="film-title">The Great Wall of China</span>
+              <span class="film-span tabular">770 BCE → 2026</span>
+            </div>
+          </button>
+
+          <!-- Statue of Liberty -->
+          <button class="film-item" type="button" data-film="liberty" aria-label="Preview The Statue of Liberty, 1865 to 2026, 7 minutes 18 seconds">
+            <div class="film-frame">
+              <img class="film-poster" src="assets/media/liberty-poster.jpg" alt="3D render of the Statue of Liberty in New York Harbor" width="1280" height="720" loading="lazy">
+              <video class="film-preview" data-src="assets/media/liberty-preview.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <div class="film-scrim" aria-hidden="true"></div>
+              <span class="film-badge tabular">07:18</span>
+            </div>
+            <div class="film-meta">
+              <span class="film-title">The Statue of Liberty</span>
+              <span class="film-span tabular">1865 → 2026</span>
+            </div>
+          </button>
+
+          <!-- Notre-Dame de Paris -->
+          <button class="film-item" type="button" data-film="notre-dame" aria-label="Preview Notre-Dame de Paris, 1163 to 2024, 2 minutes 20 seconds">
+            <div class="film-frame">
+              <img class="film-poster" src="assets/media/notre-dame-poster.jpg" alt="3D render of Notre-Dame de Paris beside the Seine" width="1280" height="720" loading="lazy">
+              <video class="film-preview" data-src="assets/media/notre-dame-preview.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <div class="film-scrim" aria-hidden="true"></div>
+              <span class="film-badge tabular">02:20</span>
+            </div>
+            <div class="film-meta">
+              <span class="film-title">Notre-Dame de Paris</span>
+              <span class="film-span tabular">1163 → 2024</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Blender (.blend) Scene Downloads -->
+    <section class="section" id="downloads" aria-labelledby="downloads-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="downloads-heading">Blender Scene Files (.blend)</h2>
+          <p class="section-note">Master scenes built in Blender 5.2 with organized chronological collections, camera rigs, and CC0 PBR texture manifests.</p>
+        </div>
+
+        <div class="download-table" role="region" aria-label="Downloadable Blender master scenes">
+          <div class="dl-row dl-head" aria-hidden="true">
+            <span>Scene Master</span>
+            <span>Chronology</span>
+            <span>Build Specs</span>
+            <span>Package</span>
+          </div>
+
+          <div class="dl-row">
+            <div class="dl-name">
+              <strong>colosseum-master.blend</strong>
+              <span>189 m × 156 m procedural Roman amphitheater, Hypogeum &amp; Velarium</span>
+            </div>
+            <span class="dl-meta tabular">AD 70 → 2026</span>
+            <span class="dl-meta tabular">Blender 5.2 · 7.7 MB · CC0 PBR</span>
+            <a class="btn btn-ghost dl-btn" href="https://drive.google.com/uc?export=download&id=1M2l1JBksnYW8eQyaX7T0Pj2wue5IADkO" target="_blank" rel="noopener noreferrer" data-dl="colosseum-master.blend">Download .blend</a>
+          </div>
+
+          <div class="dl-row">
+            <div class="dl-name">
+              <strong>giza-pyramids-master.blend</strong>
+              <span>Khufu, Khafre, Menkaure, Great Sphinx, Nile branch &amp; modern Cairo grid</span>
+            </div>
+            <span class="dl-meta tabular">2600 BCE → 2026</span>
+            <span class="dl-meta tabular">Blender 5.2 · 58.4 MB · Cycles RTX</span>
+            <a class="btn btn-ghost dl-btn" href="https://drive.google.com/uc?export=download&id=1Z2czYd-LWRZxNgJ-vfrfLVGIBoli0W_x" target="_blank" rel="noopener noreferrer" data-dl="giza-pyramids-master.blend">Download .blend</a>
+          </div>
+
+          <div class="dl-row">
+            <div class="dl-name">
+              <strong>great-wall-master.blend</strong>
+              <span>Four 3D mountain sets &amp; dynasty-by-dynasty fortification layers</span>
+            </div>
+            <span class="dl-meta tabular">770 BCE → 2026</span>
+            <span class="dl-meta tabular">Blender 5.2 · 24.3 MB · 18 Scenes</span>
+            <a class="btn btn-ghost dl-btn" href="https://drive.google.com/uc?export=download&id=1Ewa-EwO788RC8jXlS6zttzmj35-lwucd" target="_blank" rel="noopener noreferrer" data-dl="great-wall-master.blend">Download .blend</a>
+          </div>
+
+          <div class="dl-row">
+            <div class="dl-name">
+              <strong>statue-of-liberty-v3-master.blend</strong>
+              <span>Paris workshop, Eiffel iron pylon, Rouen transit &amp; New York pedestal</span>
+            </div>
+            <span class="dl-meta tabular">1865 → 2026</span>
+            <span class="dl-meta tabular">Blender 5.2 · 148.4 MB · 28 Scenes</span>
+            <a class="btn btn-ghost dl-btn" href="https://drive.google.com/uc?export=download&id=1oVao0BYknHmpy19CeGUF7fo-nqSb6STW" target="_blank" rel="noopener noreferrer" data-dl="statue-of-liberty-v3-master.blend">Download .blend</a>
+          </div>
+
+          <div class="dl-row">
+            <div class="dl-name">
+              <strong>notre-dame-v2-master.blend</strong>
+              <span>Modular Gothic choir, nave, Viollet-le-Duc spire &amp; 2024 restoration</span>
+            </div>
+            <span class="dl-meta tabular">1163 → 2024</span>
+            <span class="dl-meta tabular">Blender 5.2 · 8.3 MB · Modular Rig</span>
+            <a class="btn btn-ghost dl-btn" href="https://drive.google.com/uc?export=download&id=1OtWVoFfPkcgniLEPjhz5c8DgUBH4AlW2" target="_blank" rel="noopener noreferrer" data-dl="notre-dame-v2-master.blend">Download .blend</a>
+          </div>
+        </div>
+        <div class="dl-status" id="dl-status" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Section 4: About & 3D Method -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="about-heading">About Le Magnifique Studio</h2>
+          <p class="section-note">An independent 3D architectural film practice dedicated to historical precision, quiet cinema, and open Blender craft.</p>
+        </div>
+
+        <div class="method-grid">
+          <div class="about-col">
+            <p class="about-lead">
+              Le Magnifique Studio is the creative workshop behind <strong>Magnifique Lapse</strong> (<a class="inline-link" href="https://www.youtube.com/@studiolemagnifique" target="_blank" rel="noopener noreferrer">@studiolemagnifique</a>). Every film is researched, modeled, lit, and assembled by hand in Blender — never prompted through generative video models.
+            </p>
+            <ol class="method-list">
+              <li class="method-row">
+                <span class="method-num tabular">01</span>
+                <div>
+                  <h3>Historical Chronology &amp; Plans</h3>
+                  <p>Each monument starts as a dated architectural timeline drawn from archaeological surveys, restoration blueprints, and historical cartography.</p>
+                </div>
+              </li>
+              <li class="method-row">
+                <span class="method-num tabular">02</span>
+                <div>
+                  <h3>Real-Scale Blender 5.2 Geometry</h3>
+                  <p>Modular structural layers are modeled to true meter proportions and shaded with CC0 2K PBR materials and physical golden-hour skies.</p>
+                </div>
+              </li>
+              <li class="method-row">
+                <span class="method-num tabular">03</span>
+                <div>
+                  <h3>Silent Visual Storytelling &amp; Spatial Sound</h3>
+                  <p>Rendered at 1080p/4K 30 fps with clean Bahnschrift year counters and mastered to EBU R128 (-14.0 LUFS) with original environmental audio.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="method-visual">
+            <div class="method-frame">
+              <img src="assets/media/notre-dame-poster.jpg" alt="Blender 3D architectural model of Notre-Dame de Paris" width="1280" height="720" loading="lazy">
+            </div>
+            <div class="method-pledge tabular">
+              <div class="pledge-cell">
+                <div class="pledge-k">AI Video Frames</div>
+                <div class="pledge-v">0%</div>
+              </div>
+              <div class="pledge-cell">
+                <div class="pledge-k">Render Engine</div>
+                <div class="pledge-v">Blender 5.2</div>
+              </div>
+              <div class="pledge-cell">
+                <div class="pledge-k">Audio Master</div>
+                <div class="pledge-v">-14.0 LUFS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Pre-Footer YouTube Channel Band -->
+    <section class="channel-band" id="channel" aria-labelledby="channel-heading">
+      <div class="wrap channel-inner">
+        <div>
+          <h2 id="channel-heading">Watch the full chronologies on Magnifique Lapse.</h2>
+          <p class="channel-copy">
+            Every monument release premieres in full resolution with spatial sound design and chaptered historical sources on YouTube.
+          </p>
+        </div>
+        <div class="channel-cta-col">
+          <span class="channel-handle">@studiolemagnifique</span>
+          <a class="btn btn-primary" href="https://www.youtube.com/@studiolemagnifique" target="_blank" rel="noopener noreferrer">
+            Subscribe on YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Studio Footer with Signature Architectural Wordmark -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand-link" href="#top" aria-label="Back to top">
+            <svg class="brand-mark" viewBox="0 0 240 240" aria-hidden="true">
+              <path d="M 28,28 L 72,28 L 72,168 L 212,168 L 212,212 L 28,212 Z" fill="var(--ink)"/>
+              <polygon points="94,146 94,106 124,88 124,146" fill="var(--accent)" fill-opacity="0.32"/>
+              <polygon points="138,146 138,76 168,58 168,146" fill="var(--accent)" fill-opacity="0.62"/>
+              <polygon points="182,146 182,46 212,28 212,146" fill="var(--accent)"/>
+            </svg>
+            <span class="brand-wordmark">LE MAGNIFIQUE <span>STUDIO</span></span>
+          </a>
+          <p class="footer-desc">
+            Independent 3D architectural timelapse studio behind Magnifique Lapse. Modeled in Blender; never generated by AI video.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Archive</h3>
+          <ul>
+            <li><a href="#films">The Colosseum</a></li>
+            <li><a href="#films">Pyramids of Giza</a></li>
+            <li><a href="#films">Great Wall of China</a></li>
+            <li><a href="#films">Statue of Liberty</a></li>
+            <li><a href="#films">Notre-Dame de Paris</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="#downloads">.blend Files</a></li>
+            <li><a href="#about">About &amp; Method</a></li>
+            <li><a href="#top">Intro Showreel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/@studiolemagnifique" target="_blank" rel="noopener noreferrer">@studiolemagnifique</a></li>
+            <li><a href="mailto:info@lemagnifique.studio">info@lemagnifique.studio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <details class="credits-disclosure">
+        <summary>Credits &amp; Open-License Attributions (Poly Haven CC0 · Sketchfab CC BY · Public Domain Music)</summary>
+        <div class="credits-grid">
+          <div>
+            <strong>PBR Textures, HDRIs &amp; 3D Assets (CC0)</strong>
+            <p>Poly Haven (CC0): 2K PBR materials (Sandstone Wall, Red Brick, Cobblestone Pavement, Marble Cliff, Gravelly Sand, Oak Wood Planks), Sunset PureSky 2K HDRI, and 3D assets (Boulder 01, Coast Land Rocks 02, Marble Bust 01, Pine Tree 01).</p>
+          </div>
+          <div>
+            <strong>Community 3D Models (Sketchfab / Objaverse)</strong>
+            <p>Statue of Liberty — Gravity Jack (CC BY, adapted); MV Spartan (standing in for the frigate Isère) — Scottish Maritime Museum (CC0); additional scene props by Lucas Soler, Robert Kiraly, DJMaesen, ta.holovan, Mad_Lobster_Workshop, YadroGames, mohamedhussien, and NanoRay.</p>
+          </div>
+          <div>
+            <strong>Music &amp; Audio (Public Domain / CC0)</strong>
+            <p>Erik Satie — "Gymnopédie No. 1" (perf. Robin Alciatore) &amp; Antonín Dvořák — "Symphony No. 9 'From the New World', II. Largo" via Musopen / Wikimedia Commons (Public Domain). Environmental soundscapes synthesized procedurally (CC0).</p>
+          </div>
+        </div>
+      </details>
+
+      <div class="footer-signature" aria-hidden="true">LE MAGNIFIQUE</div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Le Magnifique Studio · lemagnifique.studio</span>
+        <span>All 3D scenes built in Blender 5.2 · CC0 PBR via Poly Haven · Community CC BY / CC0 assets credited above</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Screening Room Lightbox Modal -->
+  <div class="modal" id="screening-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-bar">
+        <span class="modal-title" id="modal-title">Film Preview</span>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close preview">&times;</button>
+      </div>
+      <div class="modal-video-wrap">
+        <video id="modal-video" controls muted loop playsinline></video>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div class="modal-span tabular" id="modal-span"></div>
+          <p class="modal-summary" id="modal-summary"></p>
+        </div>
+        <div class="modal-actions">
+          <a class="btn btn-primary" id="modal-yt-link" href="https://youtu.be/4CSVo5w839o" target="_blank" rel="noopener noreferrer">
+            Watch Full Film on YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
