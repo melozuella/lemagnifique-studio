@@ -142,6 +142,7 @@
       location: 'Giza Plateau, Egypt',
       preview: 'assets/media/giza-preview.mp4',
       poster: 'assets/media/giza-poster.jpg',
+      youtubeUrl: 'https://youtu.be/rCvF7zGRDTU',
       summary: '4,600 years across the Khufu branch of the Nile: shining white Tura limestone casing, the Great Sphinx, the Heit el-Ghurab workers settlement, medieval casing removal, and the rise of modern Cairo around the plateau.'
     },
     'great-wall': {
