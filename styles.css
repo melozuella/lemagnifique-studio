@@ -676,6 +676,18 @@ button {
   font-size: 11.5px;
 }
 
+.dl-row.is-locked .dl-name strong,
+.dl-row.is-locked .dl-meta {
+  opacity: 0.56;
+}
+
+.btn-locked {
+  border-color: var(--hairline);
+  color: var(--muted);
+  cursor: default;
+  pointer-events: none;
+}
+
 .dl-status {
   margin-top: 16px;
   min-height: 22px;
